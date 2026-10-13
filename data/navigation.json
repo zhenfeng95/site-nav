@@ -1,0 +1,1353 @@
+{
+  "categories": [
+    {
+      "id": "ai",
+      "slug": "ai",
+      "name": "AI",
+      "fullName": "常用 AI 产品与开发入口",
+      "description": "对话、写作、图像与开发相关的 AI 产品入口，方便快速找到官网与文档。",
+      "icon": "ai",
+      "items": [
+        {
+          "id": "chatgpt",
+          "name": "ChatGPT",
+          "description": "OpenAI 对话产品，适合问答、写作与日常协作。",
+          "url": "https://chatgpt.com",
+          "tags": [
+            "AI",
+            "对话"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/chatgpt.ico"
+        },
+        {
+          "id": "claude",
+          "name": "Claude",
+          "description": "Anthropic 对话助手，适合长文理解与代码协助。",
+          "url": "https://claude.ai",
+          "tags": [
+            "AI",
+            "对话"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/claude.png"
+        },
+        {
+          "id": "gemini",
+          "name": "Gemini",
+          "description": "Google 多模态 AI 助手。",
+          "url": "https://gemini.google.com",
+          "tags": [
+            "AI",
+            "对话"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/gemini.png"
+        },
+        {
+          "id": "deepseek",
+          "name": "DeepSeek",
+          "description": "深度求索对话与推理模型。",
+          "url": "https://chat.deepseek.com",
+          "iconUrl": "/icons/sites/deepseek.ico",
+          "tags": [
+            "AI",
+            "对话"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12"
+        },
+        {
+          "id": "kimi",
+          "name": "Kimi",
+          "description": "月之暗面长上下文助手。",
+          "url": "https://kimi.moonshot.cn",
+          "tags": [
+            "AI",
+            "对话"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/kimi.ico"
+        },
+        {
+          "id": "doubao",
+          "name": "豆包",
+          "description": "字节跳动 AI 助手。",
+          "url": "https://www.doubao.com",
+          "tags": [
+            "AI",
+            "对话"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/doubao.png"
+        },
+        {
+          "id": "tongyi",
+          "name": "通义千问",
+          "description": "阿里云通义千问对话入口。",
+          "url": "https://tongyi.aliyun.com",
+          "iconUrl": "/icons/sites/tongyi.svg",
+          "tags": [
+            "AI",
+            "对话"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12"
+        },
+        {
+          "id": "cursor",
+          "name": "Cursor",
+          "description": "面向编程的 AI 编辑器，适合本地项目开发。",
+          "url": "https://cursor.com",
+          "tags": [
+            "AI",
+            "开发"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/cursor.ico"
+        }
+      ]
+    },
+    {
+      "id": "dev",
+      "slug": "dev",
+      "name": "开发",
+      "fullName": "开发与协作常用站点",
+      "description": "代码托管、文档、包管理与部署相关入口。",
+      "icon": "dev",
+      "items": [
+        {
+          "id": "github",
+          "name": "GitHub",
+          "description": "代码托管与协作平台。",
+          "url": "https://github.com",
+          "tags": [
+            "开发",
+            "协作"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/github.ico"
+        },
+        {
+          "id": "gitee",
+          "name": "Gitee",
+          "description": "国内代码托管与协作平台。",
+          "url": "https://gitee.com",
+          "tags": [
+            "开发",
+            "协作"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/gitee.ico"
+        },
+        {
+          "id": "npm",
+          "name": "npm",
+          "description": "JavaScript 包注册表与文档入口。",
+          "url": "https://www.npmjs.com",
+          "tags": [
+            "开发",
+            "包管理"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/npm.png"
+        },
+        {
+          "id": "cloudflare",
+          "name": "Cloudflare",
+          "description": "CDN、DNS 与 Workers 部署相关入口。",
+          "url": "https://www.cloudflare.com",
+          "tags": [
+            "开发",
+            "部署"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/cloudflare.ico"
+        },
+        {
+          "id": "tencent-cloud",
+          "name": "腾讯云",
+          "description": "腾讯云计算与云服务控制台。",
+          "url": "https://cloud.tencent.com",
+          "tags": [
+            "开发",
+            "云服务"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/tencent-cloud.png"
+        },
+        {
+          "id": "aliyun",
+          "name": "阿里云",
+          "description": "阿里云计算与云服务控制台。",
+          "url": "https://www.aliyun.com",
+          "tags": [
+            "开发",
+            "云服务"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/aliyun.png"
+        },
+        {
+          "id": "stackoverflow",
+          "name": "Stack Overflow",
+          "description": "开发者问答社区。",
+          "url": "https://stackoverflow.com",
+          "tags": [
+            "开发",
+            "问答"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/stackoverflow.ico"
+        },
+        {
+          "id": "mdn",
+          "name": "MDN",
+          "description": "Web 技术权威文档。",
+          "url": "https://developer.mozilla.org",
+          "tags": [
+            "开发",
+            "文档"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/mdn.ico"
+        },
+        {
+          "id": "w3school",
+          "name": "W3School",
+          "description": "Web 前端入门教程与参考。",
+          "url": "https://www.w3school.com.cn",
+          "tags": [
+            "开发",
+            "文档"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/w3school.png"
+        },
+        {
+          "id": "csdn",
+          "name": "CSDN",
+          "description": "中文开发者技术社区。",
+          "url": "https://www.csdn.net",
+          "tags": [
+            "开发",
+            "社区"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/csdn.ico"
+        },
+        {
+          "id": "juejin",
+          "name": "掘金",
+          "description": "中文技术内容社区。",
+          "url": "https://juejin.cn",
+          "tags": [
+            "开发",
+            "社区"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/juejin.ico"
+        },
+        {
+          "id": "linux-cmd",
+          "name": "Linux命令查询",
+          "description": "Linux 命令速查手册。",
+          "url": "https://linux.lylme.com/",
+          "tags": [
+            "开发",
+            "Linux",
+            "文档"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/linux-cmd.png"
+        }
+      ]
+    },
+    {
+      "id": "productivity",
+      "slug": "productivity",
+      "name": "效率",
+      "fullName": "笔记、协作与效率入口",
+      "description": "日常写作、任务与知识管理相关站点。",
+      "icon": "productivity",
+      "items": [
+        {
+          "id": "notion",
+          "name": "Notion",
+          "description": "笔记与知识库协作工具。",
+          "url": "https://www.notion.so",
+          "tags": [
+            "效率",
+            "笔记"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/notion.png"
+        },
+        {
+          "id": "linear",
+          "name": "Linear",
+          "description": "产品与工程任务管理工具。",
+          "url": "https://linear.app",
+          "tags": [
+            "效率",
+            "任务"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/linear.ico"
+        },
+        {
+          "id": "feishu",
+          "name": "飞书",
+          "description": "协作办公与知识管理。",
+          "url": "https://www.feishu.cn",
+          "tags": [
+            "效率",
+            "协作"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/feishu.ico"
+        },
+        {
+          "id": "yuque",
+          "name": "语雀",
+          "description": "知识库与文档协作。",
+          "url": "https://www.yuque.com",
+          "tags": [
+            "效率",
+            "文档"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/yuque.png"
+        },
+        {
+          "id": "wolai",
+          "name": "我来",
+          "description": "在线协作笔记。",
+          "url": "https://www.wolai.com",
+          "tags": [
+            "效率",
+            "笔记"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12"
+        },
+        {
+          "id": "processon",
+          "name": "ProcessOn",
+          "description": "在线流程图与思维导图。",
+          "url": "https://www.processon.com",
+          "tags": [
+            "效率",
+            "绘图"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/processon.ico"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "slug": "design",
+      "name": "设计",
+      "fullName": "设计与素材相关入口",
+      "description": "界面设计、图标与协作设计工具。",
+      "icon": "design",
+      "items": [
+        {
+          "id": "figma",
+          "name": "Figma",
+          "description": "协作式界面设计工具。",
+          "url": "https://www.figma.com",
+          "tags": [
+            "设计",
+            "UI"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/figma.ico"
+        },
+        {
+          "id": "lucide",
+          "name": "Lucide",
+          "description": "开源图标集，适合产品与文档使用。",
+          "url": "https://lucide.dev",
+          "tags": [
+            "设计",
+            "图标"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/lucide.ico"
+        },
+        {
+          "id": "iconfont",
+          "name": "iconfont",
+          "description": "阿里巴巴矢量图标库。",
+          "url": "https://www.iconfont.cn",
+          "tags": [
+            "设计",
+            "图标"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/iconfont.svg"
+        },
+        {
+          "id": "unsplash",
+          "name": "Unsplash",
+          "description": "免费高质量图片素材。",
+          "url": "https://unsplash.com",
+          "tags": [
+            "设计",
+            "图片"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/unsplash.ico"
+        },
+        {
+          "id": "dribbble",
+          "name": "Dribbble",
+          "description": "设计灵感与作品社区。",
+          "url": "https://dribbble.com",
+          "tags": [
+            "设计",
+            "灵感"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/dribbble.ico"
+        },
+        {
+          "id": "coolors",
+          "name": "Coolors",
+          "description": "配色方案生成工具。",
+          "url": "https://coolors.co",
+          "tags": [
+            "设计",
+            "配色"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/coolors.png"
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "slug": "social",
+      "name": "社交",
+      "fullName": "社交与内容平台",
+      "description": "常用社交、问答与邮箱入口。",
+      "icon": "news",
+      "items": [
+        {
+          "id": "weibo",
+          "name": "微博",
+          "description": "社交媒体平台。",
+          "url": "https://weibo.com",
+          "tags": [
+            "社交"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/weibo.ico"
+        },
+        {
+          "id": "zhihu",
+          "name": "知乎",
+          "description": "中文问答社区。",
+          "url": "https://www.zhihu.com",
+          "tags": [
+            "社交",
+            "问答"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/zhihu.ico"
+        },
+        {
+          "id": "bilibili",
+          "name": "哔哩哔哩",
+          "description": "视频弹幕社区。",
+          "url": "https://www.bilibili.com",
+          "tags": [
+            "社交",
+            "视频"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/bilibili.ico"
+        },
+        {
+          "id": "xiaohongshu",
+          "name": "小红书",
+          "description": "生活方式与种草社区。",
+          "url": "https://www.xiaohongshu.com",
+          "tags": [
+            "社交"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/xiaohongshu.ico"
+        },
+        {
+          "id": "gmail",
+          "name": "Gmail",
+          "description": "Google 邮箱。",
+          "url": "https://mail.google.com",
+          "tags": [
+            "社交",
+            "邮箱"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/gmail.png"
+        },
+        {
+          "id": "outlook",
+          "name": "Outlook",
+          "description": "Microsoft 邮箱。",
+          "url": "https://outlook.live.com",
+          "tags": [
+            "社交",
+            "邮箱"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/outlook.png"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "slug": "tools",
+      "name": "工具",
+      "fullName": "实用在线工具",
+      "description": "翻译、查询与格式化等日常工具。",
+      "icon": "infra",
+      "items": [
+        {
+          "id": "translate",
+          "name": "Google 翻译",
+          "description": "多语言在线翻译。",
+          "url": "https://translate.google.com",
+          "tags": [
+            "工具",
+            "翻译"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/translate.png"
+        },
+        {
+          "id": "youdao",
+          "name": "有道翻译",
+          "description": "网易有道在线翻译。",
+          "url": "https://fanyi.youdao.com",
+          "tags": [
+            "工具",
+            "翻译"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/youdao.ico"
+        },
+        {
+          "id": "jsonformatter",
+          "name": "JSON 格式化",
+          "description": "在线 JSON 校验与美化。",
+          "url": "https://jsonformatter.org",
+          "tags": [
+            "工具",
+            "开发"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/jsonformatter.png"
+        },
+        {
+          "id": "regex101",
+          "name": "Regex101",
+          "description": "正则表达式测试与调试。",
+          "url": "https://regex101.com",
+          "tags": [
+            "工具",
+            "开发"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/regex101.ico"
+        },
+        {
+          "id": "ipip",
+          "name": "IP 查询",
+          "description": "IP 地址归属地查询。",
+          "url": "https://www.ipip.net",
+          "tags": [
+            "工具",
+            "网络"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/ipip.ico"
+        },
+        {
+          "id": "tinypng",
+          "name": "TinyPNG",
+          "description": "图片压缩工具。",
+          "url": "https://tinypng.com",
+          "tags": [
+            "工具",
+            "图片"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/tinypng.ico"
+        }
+      ]
+    },
+    {
+      "id": "storage",
+      "slug": "storage",
+      "name": "存储",
+      "fullName": "常用网盘与云存储",
+      "description": "百度、阿里、夸克、迅雷、天翼、UC、蓝奏与 OneDrive 等网盘入口。",
+      "icon": "cloud",
+      "items": [
+        {
+          "id": "baidu-pan",
+          "name": "百度网盘",
+          "description": "百度云存储与文件同步。",
+          "url": "https://pan.baidu.com",
+          "tags": [
+            "网盘",
+            "存储"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/baidu-pan.png"
+        },
+        {
+          "id": "aliyun-pan",
+          "name": "阿里云盘",
+          "description": "阿里云盘文件存储与分享。",
+          "url": "https://www.alipan.com",
+          "tags": [
+            "网盘",
+            "存储"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/aliyun-pan.png"
+        },
+        {
+          "id": "quark-pan",
+          "name": "夸克网盘",
+          "description": "夸克网盘文件存储。",
+          "url": "https://pan.quark.cn",
+          "tags": [
+            "网盘",
+            "存储"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/quark-pan.ico"
+        },
+        {
+          "id": "xunlei-pan",
+          "name": "迅雷云盘",
+          "description": "迅雷云盘文件存储。",
+          "url": "https://pan.xunlei.com",
+          "tags": [
+            "网盘",
+            "存储"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/xunlei-pan.png"
+        },
+        {
+          "id": "tianyi-pan",
+          "name": "天翼云盘",
+          "description": "中国电信天翼云盘。",
+          "url": "https://cloud.189.cn",
+          "tags": [
+            "网盘",
+            "存储"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/tianyi-pan.png"
+        },
+        {
+          "id": "uc-pan",
+          "name": "UC网盘",
+          "description": "UC 网盘文件存储。",
+          "url": "https://drive.uc.cn",
+          "tags": [
+            "网盘",
+            "存储"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/uc-pan.svg"
+        },
+        {
+          "id": "lanzou-pan",
+          "name": "蓝奏云",
+          "description": "蓝奏云文件分享与存储。",
+          "url": "https://www.lanzou.com",
+          "tags": [
+            "网盘",
+            "存储"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/lanzou-pan.svg"
+        },
+        {
+          "id": "onedrive",
+          "name": "OneDrive",
+          "description": "Microsoft 云存储。",
+          "url": "https://onedrive.live.com",
+          "tags": [
+            "网盘",
+            "存储"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/onedrive.png"
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "slug": "video",
+      "name": "影视",
+      "fullName": "视频、直播与短视频",
+      "description": "腾讯视频、优酷、爱奇艺、B站、央视及直播平台入口。",
+      "icon": "video",
+      "items": [
+        {
+          "id": "tencent-video",
+          "name": "腾讯视频",
+          "description": "腾讯视频在线影视。",
+          "url": "https://v.qq.com",
+          "tags": [
+            "影视",
+            "视频"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/tencent-video.png"
+        },
+        {
+          "id": "youku",
+          "name": "优酷",
+          "description": "优酷在线视频。",
+          "url": "https://www.youku.com",
+          "tags": [
+            "影视",
+            "视频"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/youku.ico"
+        },
+        {
+          "id": "iqiyi",
+          "name": "爱奇艺",
+          "description": "爱奇艺在线影视。",
+          "url": "https://www.iqiyi.com",
+          "tags": [
+            "影视",
+            "视频"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/iqiyi.ico"
+        },
+        {
+          "id": "bilibili-video",
+          "name": "哔哩哔哩",
+          "description": "B站视频与番剧。",
+          "url": "https://www.bilibili.com",
+          "tags": [
+            "影视",
+            "视频"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/bilibili.ico"
+        },
+        {
+          "id": "cctv",
+          "name": "CCTV直播",
+          "description": "央视网直播与节目。",
+          "url": "https://tv.cctv.com",
+          "tags": [
+            "影视",
+            "直播"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/cctv.jpg"
+        },
+        {
+          "id": "douyin",
+          "name": "抖音网页版",
+          "description": "抖音短视频网页版。",
+          "url": "https://www.douyin.com",
+          "tags": [
+            "影视",
+            "短视频"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/douyin.png"
+        },
+        {
+          "id": "kuaishou",
+          "name": "快手网页版",
+          "description": "快手短视频网页版。",
+          "url": "https://www.kuaishou.com",
+          "tags": [
+            "影视",
+            "短视频"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/kuaishou.svg"
+        },
+        {
+          "id": "huya",
+          "name": "虎牙直播",
+          "description": "虎牙游戏与娱乐直播。",
+          "url": "https://www.huya.com",
+          "tags": [
+            "影视",
+            "直播"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/huya.png"
+        },
+        {
+          "id": "douyu",
+          "name": "斗鱼直播",
+          "description": "斗鱼游戏与娱乐直播。",
+          "url": "https://www.douyu.com",
+          "tags": [
+            "影视",
+            "直播"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/douyu.ico"
+        },
+        {
+          "id": "egame-qq",
+          "name": "企鹅电竞",
+          "description": "腾讯企鹅电竞直播。",
+          "url": "https://egame.qq.com",
+          "tags": [
+            "影视",
+            "电竞"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/egame-qq.svg"
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "slug": "music",
+      "name": "音乐",
+      "fullName": "在线音乐平台",
+      "description": "网易云、QQ 音乐与酷狗等听歌入口。",
+      "icon": "music",
+      "items": [
+        {
+          "id": "netease-music",
+          "name": "网易云音乐",
+          "description": "网易云音乐在线听歌。",
+          "url": "https://music.163.com",
+          "tags": [
+            "音乐"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/netease-music.svg"
+        },
+        {
+          "id": "qq-music",
+          "name": "QQ音乐",
+          "description": "QQ 音乐在线听歌。",
+          "url": "https://y.qq.com",
+          "tags": [
+            "音乐"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/qq-music.svg"
+        },
+        {
+          "id": "kugou",
+          "name": "酷狗音乐",
+          "description": "酷狗音乐在线听歌。",
+          "url": "https://www.kugou.com",
+          "tags": [
+            "音乐"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/kugou.svg"
+        }
+      ]
+    },
+    {
+      "id": "analytics",
+      "slug": "analytics",
+      "name": "统计分析",
+      "fullName": "网站 PV / UV 与流量分析",
+      "description": "常用网站访问量、访客统计与行为分析工具入口。",
+      "icon": "analytics",
+      "items": [
+        {
+          "id": "51la",
+          "name": "51.la",
+          "description": "我要啦网站统计，常用 PV / UV 统计。",
+          "url": "https://www.51.la",
+          "tags": [
+            "统计",
+            "PV",
+            "UV"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/51la.ico"
+        },
+        {
+          "id": "baidu-tongji",
+          "name": "百度统计",
+          "description": "百度官方网站流量与转化分析。",
+          "url": "https://tongji.baidu.com",
+          "tags": [
+            "统计",
+            "PV",
+            "UV"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/baidu-tongji.ico"
+        },
+        {
+          "id": "umeng",
+          "name": "友盟+",
+          "description": "原 CNZZ，应用与网站数据统计分析。",
+          "url": "https://www.umeng.com",
+          "tags": [
+            "统计",
+            "PV",
+            "UV"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/umeng.ico"
+        },
+        {
+          "id": "google-analytics",
+          "name": "Google Analytics",
+          "description": "Google 网站与应用流量分析。",
+          "url": "https://analytics.google.com",
+          "tags": [
+            "统计",
+            "PV",
+            "UV"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/google-analytics.png"
+        },
+        {
+          "id": "microsoft-clarity",
+          "name": "Microsoft Clarity",
+          "description": "免费热力图、录屏与行为分析。",
+          "url": "https://clarity.microsoft.com",
+          "tags": [
+            "统计",
+            "热力图"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/microsoft-clarity.ico"
+        },
+        {
+          "id": "cloudflare-analytics",
+          "name": "Cloudflare Analytics",
+          "description": "Cloudflare 免费隐私友好网站统计。",
+          "url": "https://www.cloudflare.com/web-analytics/",
+          "tags": [
+            "统计",
+            "PV"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/cloudflare-analytics.ico"
+        },
+        {
+          "id": "matomo",
+          "name": "Matomo",
+          "description": "开源、可自托管的网站分析平台。",
+          "url": "https://matomo.org",
+          "tags": [
+            "统计",
+            "开源"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/matomo.png"
+        },
+        {
+          "id": "plausible",
+          "name": "Plausible",
+          "description": "轻量、隐私友好的网站分析。",
+          "url": "https://plausible.io",
+          "tags": [
+            "统计",
+            "隐私"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/plausible.ico"
+        },
+        {
+          "id": "hotjar",
+          "name": "Hotjar",
+          "description": "热力图、会话录制与用户反馈。",
+          "url": "https://www.hotjar.com",
+          "tags": [
+            "统计",
+            "热力图"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/hotjar.ico"
+        },
+        {
+          "id": "sensorsdata",
+          "name": "神策数据",
+          "description": "国内用户行为分析与数据运营平台。",
+          "url": "https://www.sensorsdata.cn",
+          "tags": [
+            "统计",
+            "行为分析"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/sensorsdata.ico"
+        },
+        {
+          "id": "growingio",
+          "name": "GrowingIO",
+          "description": "增长分析与用户行为数据平台。",
+          "url": "https://www.growingio.com",
+          "tags": [
+            "统计",
+            "增长"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/growingio.ico"
+        },
+        {
+          "id": "volcengine-datafinder",
+          "name": "火山引擎增长分析",
+          "description": "字节跳动火山引擎 DataFinder。",
+          "url": "https://www.volcengine.com/product/datafinder",
+          "tags": [
+            "统计",
+            "增长"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/volcengine-datafinder.ico"
+        },
+        {
+          "id": "mixpanel",
+          "name": "Mixpanel",
+          "description": "产品事件与用户行为分析。",
+          "url": "https://mixpanel.com",
+          "tags": [
+            "统计",
+            "产品分析"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/mixpanel.ico"
+        },
+        {
+          "id": "amplitude",
+          "name": "Amplitude",
+          "description": "产品增长与用户行为分析平台。",
+          "url": "https://amplitude.com",
+          "tags": [
+            "统计",
+            "产品分析"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/amplitude.ico"
+        },
+        {
+          "id": "cnzz",
+          "name": "CNZZ",
+          "description": "站长统计入口，现已并入友盟+。",
+          "url": "https://www.cnzz.com",
+          "tags": [
+            "统计",
+            "PV",
+            "UV"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/cnzz.ico"
+        }
+      ]
+    },
+    {
+      "id": "webmaster",
+      "slug": "webmaster",
+      "name": "站长平台",
+      "fullName": "搜索引擎站长与收录平台",
+      "description": "各搜索引擎站长工具、Sitemap 提交与收录管理入口。",
+      "icon": "webmaster",
+      "items": [
+        {
+          "id": "baidu-ziyuan",
+          "name": "百度站长",
+          "description": "百度搜索资源平台，提交与收录管理。",
+          "url": "https://ziyuan.baidu.com",
+          "tags": [
+            "站长",
+            "收录"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/baidu-ziyuan.ico"
+        },
+        {
+          "id": "google-search-console",
+          "name": "Google Search Console",
+          "description": "Google 搜索表现、索引与 Sitemap 管理。",
+          "url": "https://search.google.com/search-console",
+          "tags": [
+            "站长",
+            "收录"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/google-search-console.png"
+        },
+        {
+          "id": "bing-webmaster",
+          "name": "必应站长",
+          "description": "Bing Webmaster Tools。",
+          "url": "https://www.bing.com/webmasters",
+          "tags": [
+            "站长",
+            "收录"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/bing-webmaster.ico"
+        },
+        {
+          "id": "sogou-webmaster",
+          "name": "搜狗站长",
+          "description": "搜狗搜索资源平台。",
+          "url": "https://zhanzhang.sogou.com",
+          "tags": [
+            "站长",
+            "收录"
+          ],
+          "officialUrlConfirmed": true,
+          "featured": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/sogou-webmaster.ico"
+        },
+        {
+          "id": "360-webmaster",
+          "name": "360 站长",
+          "description": "360 搜索站长平台。",
+          "url": "https://zhanzhang.so.com",
+          "tags": [
+            "站长",
+            "收录"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/360-webmaster.ico"
+        },
+        {
+          "id": "shenma-webmaster",
+          "name": "神马站长",
+          "description": "神马搜索站长平台（UC / 夸克）。",
+          "url": "https://zhanzhang.sm.cn",
+          "tags": [
+            "站长",
+            "收录"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/shenma-webmaster.png"
+        },
+        {
+          "id": "toutiao-webmaster",
+          "name": "头条搜索站长",
+          "description": "今日头条搜索资源平台。",
+          "url": "https://zhanzhang.toutiao.com",
+          "tags": [
+            "站长",
+            "收录"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/toutiao-webmaster.ico"
+        },
+        {
+          "id": "yandex-webmaster",
+          "name": "Yandex Webmaster",
+          "description": "Yandex 站长工具。",
+          "url": "https://webmaster.yandex.com",
+          "tags": [
+            "站长",
+            "收录"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/yandex-webmaster.ico"
+        },
+        {
+          "id": "chinaz",
+          "name": "站长之家",
+          "description": "站长工具、资讯与建站资源。",
+          "url": "https://www.chinaz.com",
+          "tags": [
+            "站长",
+            "工具"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/chinaz.ico"
+        },
+        {
+          "id": "tool-chinaz",
+          "name": "站长工具",
+          "description": "权重查询、SEO 检测等站长工具集。",
+          "url": "https://tool.chinaz.com",
+          "tags": [
+            "站长",
+            "SEO"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/tool-chinaz.ico"
+        },
+        {
+          "id": "aizhan",
+          "name": "爱站网",
+          "description": "权重、反链与网站综合查询。",
+          "url": "https://www.aizhan.com",
+          "tags": [
+            "站长",
+            "SEO"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/aizhan.ico"
+        },
+        {
+          "id": "5118",
+          "name": "5118",
+          "description": "关键词挖掘与 SEO 数据平台。",
+          "url": "https://www.5118.com",
+          "tags": [
+            "站长",
+            "SEO"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/5118.ico"
+        },
+        {
+          "id": "seores",
+          "name": "站长网",
+          "description": "站长社区与建站资源（admin5）。",
+          "url": "https://www.admin5.com",
+          "tags": [
+            "站长",
+            "社区"
+          ],
+          "officialUrlConfirmed": true,
+          "updatedAt": "2026-10-12",
+          "iconUrl": "/icons/sites/seores.ico"
+        }
+      ]
+    }
+  ]
+}

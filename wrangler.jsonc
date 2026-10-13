@@ -1,0 +1,24 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "site-nav",
+    "compatibility_date": "2025-07-15",
+    "compatibility_flags": ["nodejs_compat"],
+    "observability": {
+        "enabled": true,
+    },
+    "vars": {
+        "NUXT_PUBLIC_SITE_URL": "https://wanfind.com",
+        "NUXT_GITHUB_REPORTS_OWNER": "zhenfeng95",
+        "NUXT_GITHUB_REPORTS_REPO": "site-nav",
+    },
+    "routes": [
+        {
+            "pattern": "wanfind.com",
+            "custom_domain": true,
+        },
+        {
+            "pattern": "www.wanfind.com",
+            "custom_domain": true,
+        },
+    ],
+}
