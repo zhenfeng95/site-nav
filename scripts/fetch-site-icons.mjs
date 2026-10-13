@@ -5,7 +5,7 @@
  *
  * Usage: node scripts/fetch-site-icons.mjs
  */
-import { mkdir, readFile, writeFile, readdir } from 'node:fs/promises'
+import { mkdir, readFile, writeFile, readdir, unlink } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -14,7 +14,7 @@ const dataPath = path.join(root, 'data/navigation.json')
 const outDir = path.join(root, 'public/icons/sites')
 const manifestPath = path.join(root, 'data/site-icons.json')
 const TIMEOUT_MS = 4500
-const MIN_BYTES = 64
+const MIN_BYTES = 200
 
 /** Manual fallbacks when site favicon endpoints are blocked / rate-limited. */
 const OVERRIDES = {
@@ -29,7 +29,7 @@ const OVERRIDES = {
   'google-analytics': 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-analytics.png',
   'google-search-console': 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google.png',
   stackoverflow: 'https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico',
-  dribbble: 'https://cdn.dribbble.com/assets/favicon-63b2904a333f0322858c26b85a2228fdc115292a0535ba09ac117fd1eadc0e55.ico',
+  dribbble: 'https://favicon.im/dribbble.com?larger=true',
   coolors: 'https://favicon.im/coolors.co?larger=true',
   'shenma-webmaster': 'https://favicon.im/zhanzhang.sm.cn?larger=true',
   'baidu-pan': 'https://favicon.im/pan.baidu.com?larger=true',
@@ -47,7 +47,9 @@ const OVERRIDES = {
   douyu: 'https://favicon.im/www.douyu.com?larger=true',
   tinypng: 'https://tinypng.com/images/favicon.ico',
   doubao: 'https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/logo.png',
-  wolai: 'https://cdn.wolai.com/favicon.ico',
+  wolai: 'https://favicon.im/www.wolai.com?larger=true',
+  jsonformatter: 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/json.png',
+  'volcengine-datafinder': 'https://portal.volccdn.com/obj/volcfe/misc/favicon.png',
 }
 
 function apexDomain(host) {
@@ -93,6 +95,27 @@ function extFrom(contentType, url) {
   return m ? m[1].toLowerCase().replace('jpeg', 'jpg') : 'png'
 }
 
+function looksLikeImage(buf) {
+  if (!buf || buf.length < MIN_BYTES) return false
+  const head = buf.subarray(0, 200).toString('utf8').toLowerCase()
+  if (
+    head.includes('<!doctype')
+    || head.includes('<html')
+    || head.includes('<head')
+    || head.includes('<center')
+  ) {
+    return false
+  }
+  // PNG / JPEG / GIF / ICO / WEBP / SVG
+  if (buf[0] === 0x89 && buf[1] === 0x50) return true
+  if (buf[0] === 0xff && buf[1] === 0xd8) return true
+  if (buf[0] === 0x47 && buf[1] === 0x49) return true
+  if (buf[0] === 0x00 && buf[1] === 0x00 && (buf[2] === 0x01 || buf[2] === 0x02)) return true
+  if (buf.subarray(0, 4).toString('ascii') === 'RIFF') return true
+  if (head.includes('<svg') || head.includes('<?xml')) return true
+  return false
+}
+
 async function fetchBytes(url) {
   const controller = new AbortController()
   const timer = setTimeout(() => controller.abort(), TIMEOUT_MS)
@@ -112,9 +135,7 @@ async function fetchBytes(url) {
     ])
     if (!res.ok) return null
     const buf = Buffer.from(await res.arrayBuffer())
-    if (buf.length < MIN_BYTES) return null
-    const head = buf.subarray(0, 64).toString('utf8').toLowerCase()
-    if (head.includes('<!doctype') || head.includes('<html')) return null
+    if (!looksLikeImage(buf)) return null
     return {
       buf,
       ext: extFrom(res.headers.get('content-type'), url),
@@ -136,6 +157,13 @@ async function scanLocalIcons() {
     for (const file of files) {
       const m = file.match(/^(.+)\.(svg|png|webp|gif|jpe?g|ico)$/i)
       if (!m) continue
+      const full = path.join(outDir, file)
+      const buf = await readFile(full)
+      if (!looksLikeImage(buf)) {
+        await unlink(full)
+        console.log(`removed invalid local icon: ${file}`)
+        continue
+      }
       map[m[1]] = `/icons/sites/${file}`
     }
   }
@@ -169,7 +197,8 @@ async function main() {
 
   const localMap = await scanLocalIcons()
   const items = data.categories.flatMap(category => category.items)
-  const manifest = {}
+  // Keep non-navigation local icons (e.g. search engines) when rewriting the manifest.
+  const manifest = { ...localMap }
   let ok = 0
   let fail = 0
   let skipped = 0
@@ -195,7 +224,10 @@ async function main() {
     }
   }
 
-  await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`)
+  const sortedManifest = Object.fromEntries(
+    Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b)),
+  )
+  await writeFile(manifestPath, `${JSON.stringify(sortedManifest, null, 2)}\n`)
   await writeFile(dataPath, `${JSON.stringify(data, null, 2)}\n`)
 
   console.log(`\nDone. ok=${ok} cached=${skipped} fail=${fail}`)

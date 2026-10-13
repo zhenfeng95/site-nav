@@ -77,16 +77,17 @@ export default defineNuxtConfig({
                 vars: {
                     NUXT_PUBLIC_SITE_URL: 'https://wanfind.com',
                 },
-                routes: [
-                    {
-                        pattern: 'wanfind.com',
-                        custom_domain: true,
-                    },
-                    {
-                        pattern: 'www.wanfind.com',
-                        custom_domain: true,
-                    },
-                ],
+                // 首次部署先不绑自定义域名；Worker 稳定后再在控制台添加，或取消注释后重新 deploy：
+                // routes: [
+                //     {
+                //         pattern: 'wanfind.com',
+                //         custom_domain: true,
+                //     },
+                //     {
+                //         pattern: 'www.wanfind.com',
+                //         custom_domain: true,
+                //     },
+                // ],
             },
         },
     },
