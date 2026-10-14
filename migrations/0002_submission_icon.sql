@@ -1,0 +1,1 @@
+ALTER TABLE submissions ADD COLUMN icon_url TEXT NOT NULL DEFAULT '';

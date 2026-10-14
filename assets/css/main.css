@@ -6,7 +6,7 @@
   html {
     @apply antialiased;
     text-rendering: optimizeLegibility;
-    scroll-behavior: smooth;
+    /* Keep native wheel/touch scrolling; smooth is applied per scrollIntoView call. */
   }
 
   body {

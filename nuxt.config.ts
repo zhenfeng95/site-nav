@@ -12,6 +12,10 @@ export default defineNuxtConfig({
         // 导航功能区默认 noindex；首页与信任页可收录（见 utils/seo-index.ts）
         '/nav': { index: false },
         '/nav/**': { index: false },
+        '/admin': { index: false },
+        '/admin/**': { index: false },
+        '/api/**': { index: false },
+        '/submit': { redirect: { to: '/apply', statusCode: 301 } },
     },
 
     modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
@@ -61,6 +65,9 @@ export default defineNuxtConfig({
     },
 
     runtimeConfig: {
+        // Set via NUXT_ADMIN_PASSWORD / NUXT_ADMIN_SESSION_SECRET (or Wrangler secrets).
+        adminPassword: '',
+        adminSessionSecret: '',
         public: {
             siteUrl: 'http://localhost:3000',
             siteName: '万寻导航',
@@ -77,17 +84,6 @@ export default defineNuxtConfig({
                 vars: {
                     NUXT_PUBLIC_SITE_URL: 'https://wanfind.com',
                 },
-                // 首次部署先不绑自定义域名；Worker 稳定后再在控制台添加，或取消注释后重新 deploy：
-                // routes: [
-                //     {
-                //         pattern: 'wanfind.com',
-                //         custom_domain: true,
-                //     },
-                //     {
-                //         pattern: 'www.wanfind.com',
-                //         custom_domain: true,
-                //     },
-                // ],
             },
         },
     },

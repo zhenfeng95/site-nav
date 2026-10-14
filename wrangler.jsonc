@@ -12,6 +12,14 @@
         "NUXT_GITHUB_REPORTS_REPO": "site-nav",
         "NUXT_GITHUB_REPORTS_REF": "main",
     },
+    "d1_databases": [
+        {
+            "binding": "DB",
+            "database_name": "site-nav",
+            "database_id": "7a3d98df-f914-48be-8f6b-524d6b952f70",
+            "migrations_dir": "migrations",
+        },
+    ],
     // 首次部署先不绑自定义域名；Worker 稳定后再在控制台添加，或取消注释后重新 deploy：
     "routes": [
         {

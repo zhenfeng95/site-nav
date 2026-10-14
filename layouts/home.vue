@@ -9,9 +9,10 @@ import { SITE_NAME } from '~/utils/site';
             style="background-image: url('/images/nav-bg.jpg')"
             aria-hidden="true"
         />
-        <div class="pointer-events-none fixed inset-0 -z-10 bg-sky-900/25 backdrop-blur-[2px]" aria-hidden="true" />
+        <!-- Solid tint only: full-viewport backdrop-blur forces expensive repaints while scrolling. -->
+        <div class="pointer-events-none fixed inset-0 -z-10 bg-sky-900/30" aria-hidden="true" />
 
-        <header class="sticky top-0 z-50">
+        <header class="relative z-40">
             <div class="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
                 <NuxtLink
                     to="/"
@@ -37,6 +38,8 @@ import { SITE_NAME } from '~/utils/site';
         <footer class="border-t border-white/15 bg-black/20 py-6 text-center backdrop-blur-md">
             <p class="text-xs text-white/70">
                 © 2026 {{ SITE_NAME }} ·
+                <NuxtLink to="/apply" class="underline-offset-2 hover:underline">申请收录</NuxtLink>
+                ·
                 <NuxtLink to="/disclaimer" class="underline-offset-2 hover:underline">免责声明</NuxtLink>
                 ·
                 <NuxtLink to="/about" class="underline-offset-2 hover:underline">关于</NuxtLink>

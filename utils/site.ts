@@ -15,6 +15,7 @@ export interface NavLink {
 
 export const footerAboutLinks: NavLink[] = [
     { label: '关于我们', to: '/about' },
+    { label: '申请收录', to: '/apply' },
     { label: '免责声明', to: '/disclaimer' },
     { label: '隐私政策', to: '/privacy' },
     { label: '联系我们', to: '/contact' },

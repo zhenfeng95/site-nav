@@ -511,6 +511,36 @@
                     "officialUrlConfirmed": true,
                     "updatedAt": "2026-10-12",
                     "iconUrl": "/icons/sites/tinypng.ico"
+                },
+                {
+                    "id": "squoosh",
+                    "name": "Squoosh",
+                    "description": "浏览器内压缩与转换图片，隐私本地处理。",
+                    "url": "https://squoosh.app",
+                    "tags": ["工具", "图片"],
+                    "officialUrlConfirmed": true,
+                    "updatedAt": "2026-10-14",
+                    "iconUrl": "/icons/sites/squoosh.png"
+                },
+                {
+                    "id": "cli-im",
+                    "name": "草料二维码",
+                    "description": "在线生成与管理二维码，支持活码与多种场景。",
+                    "url": "https://cli.im",
+                    "tags": ["工具", "二维码"],
+                    "officialUrlConfirmed": true,
+                    "updatedAt": "2026-10-14",
+                    "iconUrl": "/icons/sites/cli-im.ico"
+                },
+                {
+                    "id": "markdown-cn-editor",
+                    "name": "Markdown 编辑器",
+                    "description": "在线 Markdown 编辑与实时预览。",
+                    "url": "https://markdown.com.cn/editor/",
+                    "tags": ["工具", "写作"],
+                    "officialUrlConfirmed": true,
+                    "updatedAt": "2026-10-14",
+                    "iconUrl": "/icons/sites/markdown-cn-editor.ico"
                 }
             ]
         },

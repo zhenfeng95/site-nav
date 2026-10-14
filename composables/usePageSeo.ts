@@ -25,7 +25,7 @@ interface PageSeoInput {
 export function usePageSeo(input: PageSeoInput) {
   const config = useRuntimeConfig()
   const siteUrl = String(config.public.siteUrl).replace(/\/$/, '')
-  const image = input.ogImage ?? `${siteUrl}/og-image.svg`
+  const image = input.ogImage ?? `${siteUrl}/og-image.png`
   const title = input.title.includes(SITE_NAME) ? input.title : `${input.title}｜${SITE_NAME}`
   const description = input.description
   const indexable = Boolean(input.path && isPublicIndexablePath(input.path))

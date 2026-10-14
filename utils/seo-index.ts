@@ -7,10 +7,12 @@ export const INDEXABLE_STATIC_PATHS: readonly string[] = [
   '/disclaimer',
   '/privacy',
   '/contact',
+  '/apply',
 ]
 
 export const NOINDEX_PATH_PREFIXES: readonly string[] = [
   '/nav',
+  '/admin',
 ]
 
 export function normalizeSitePath(path: string): string {

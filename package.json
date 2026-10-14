@@ -10,6 +10,8 @@
         "postinstall": "nuxt prepare",
         "deploy": "nuxt build && wrangler --cwd .output deploy",
         "cf:dev": "wrangler --cwd .output dev",
+        "db:migrate:local": "wrangler d1 migrations apply site-nav --local",
+        "db:migrate:remote": "wrangler d1 migrations apply site-nav --remote",
         "icons:fetch": "node scripts/fetch-site-icons.mjs"
     },
     "dependencies": {
