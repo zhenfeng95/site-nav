@@ -83,6 +83,7 @@ export function useHomeSearch() {
   const activeId = useState<string>('home-search-engine', () => HOME_SEARCH_ENGINES[0]!.id)
   const query = useState<string>('home-search-query', () => '')
   const iconIndexById = useState<Record<string, number>>('home-search-icon-index', () => ({}))
+  const assetCdn = useAssetCdn()
 
   const engines = HOME_SEARCH_ENGINES
   const activeEngine = computed(
@@ -90,7 +91,13 @@ export function useHomeSearch() {
   )
 
   function engineIconCandidates(engine: SearchEngine) {
-    return getFaviconCandidates(`https://${engine.domain}`, 32, undefined, engine.id)
+    return getFaviconCandidates(
+      `https://${engine.domain}`,
+      32,
+      undefined,
+      engine.id,
+      assetCdn.value,
+    )
   }
 
   function engineIcon(engine: SearchEngine) {

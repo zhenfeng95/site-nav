@@ -12,6 +12,9 @@ usePageSeo({
 })
 
 const toast = useToast()
+const navBgStyle = computed(() => ({
+  backgroundImage: `url('${assetUrl('/images/nav-bg.jpg')}')`,
+}))
 const { data: meta } = await useFetch('/api/submissions/meta')
 
 const form = reactive({
@@ -180,7 +183,7 @@ async function onSubmit() {
   <div class="relative min-h-screen overflow-hidden px-4 py-10 sm:px-6 sm:py-14">
     <div
       class="pointer-events-none fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
-      style="background-image: url('/images/nav-bg.jpg')"
+      :style="navBgStyle"
       aria-hidden="true"
     />
     <div

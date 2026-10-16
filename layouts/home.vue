@@ -1,12 +1,17 @@
 <script setup lang="ts">
 import { SITE_NAME } from '~/utils/site';
+
+const logoSrc = assetUrl('/logo.png');
+const navBgStyle = computed(() => ({
+    backgroundImage: `url('${assetUrl('/images/nav-bg.jpg')}')`,
+}));
 </script>
 
 <template>
     <div class="home-layout relative min-h-screen">
         <div
             class="pointer-events-none fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
-            style="background-image: url('/images/nav-bg.jpg')"
+            :style="navBgStyle"
             aria-hidden="true"
         />
         <!-- Solid tint only: full-viewport backdrop-blur forces expensive repaints while scrolling. -->
@@ -18,7 +23,7 @@ import { SITE_NAME } from '~/utils/site';
                     to="/"
                     class="inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1.5 text-sm font-semibold text-white backdrop-blur-md transition hover:bg-white/30"
                 >
-                    <img src="/logo.png" alt="" width="28" class="h-6 w-6 shrink-0 rounded-md object-cover" />
+                    <img :src="logoSrc" alt="" width="28" class="h-6 w-6 shrink-0 rounded-md object-cover" />
                     {{ SITE_NAME }}
                 </NuxtLink>
 

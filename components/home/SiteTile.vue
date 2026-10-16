@@ -6,8 +6,9 @@ const props = defineProps<{
   item: NavigationItem
 }>()
 
+const assetCdn = useAssetCdn()
 const candidates = computed(() =>
-  getFaviconCandidates(props.item.url, 64, props.item.iconUrl, props.item.id),
+  getFaviconCandidates(props.item.url, 64, props.item.iconUrl, props.item.id, assetCdn.value),
 )
 const candidateIndex = ref(0)
 

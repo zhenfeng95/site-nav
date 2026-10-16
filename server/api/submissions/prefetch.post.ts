@@ -27,7 +27,7 @@ export default defineEventHandler(async (event) => {
     const host = new URL(url).hostname
     return {
       name: host,
-      iconUrl: `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&sz=64`,
+      iconUrl: new URL('/favicon.ico', url).toString(),
       url,
     }
   }

@@ -1,12 +1,5 @@
 import siteIconManifest from '~/data/site-icons.json'
-
-function apexDomain(host: string): string {
-  const parts = host.split('.').filter(Boolean)
-  if (parts.length <= 2) {
-    return host
-  }
-  return parts.slice(-2).join('.')
-}
+import { withAssetCdn } from '~/utils/asset-url'
 
 const localIcons = siteIconManifest as Record<string, string>
 
@@ -18,12 +11,22 @@ export function getLocalIconPath(id?: string): string | undefined {
   return localIcons[id]
 }
 
-/** Build favicon URL candidates for a site (local first, then remotes). */
+/** Prefer same-origin / data URLs so the UI never probes third-party favicon CDNs. */
+function isBundledIconUrl(value: string): boolean {
+  return value.startsWith('/') || value.startsWith('data:')
+}
+
+/**
+ * Build favicon URL candidates for display.
+ * Order: local manifest → bundled/data iconUrl. No Google / DDG / favicon.im probes.
+ * Missing icons fall through to the letter placeholder in SiteTile.
+ */
 export function getFaviconCandidates(
-  url: string,
-  size = 64,
+  _url: string,
+  _size = 64,
   iconUrl?: string,
   id?: string,
+  assetCdn = '',
 ): string[] {
   const list: string[] = []
 
@@ -32,32 +35,19 @@ export function getFaviconCandidates(
     list.push(local)
   }
 
-  if (iconUrl) {
+  if (iconUrl && isBundledIconUrl(iconUrl)) {
     list.push(iconUrl)
   }
 
-  try {
-    const host = new URL(url).hostname.replace(/^www\./, '')
-    const apex = apexDomain(host)
-    const hosts = host === apex ? [host] : [host, apex]
-
-    for (const h of hosts) {
-      list.push(
-        `https://${h}/favicon.ico`,
-        `https://www.${h}/favicon.ico`,
-        `https://www.google.com/s2/favicons?domain=${encodeURIComponent(h)}&sz=${size}`,
-        `https://icons.duckduckgo.com/ip3/${h}.ico`,
-        `https://favicon.im/${encodeURIComponent(h)}?larger=true`,
-      )
-    }
-  }
-  catch {
-    // ignore invalid urls
-  }
-
-  return [...new Set(list)]
+  return [...new Set(list)].map(entry => withAssetCdn(entry, assetCdn))
 }
 
-export function getFaviconUrl(url: string, size = 64, iconUrl?: string, id?: string): string {
-  return getFaviconCandidates(url, size, iconUrl, id)[0] ?? ''
+export function getFaviconUrl(
+  url: string,
+  size = 64,
+  iconUrl?: string,
+  id?: string,
+  assetCdn = '',
+): string {
+  return getFaviconCandidates(url, size, iconUrl, id, assetCdn)[0] ?? ''
 }

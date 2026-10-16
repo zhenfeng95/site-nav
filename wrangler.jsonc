@@ -8,6 +8,7 @@
     },
     "vars": {
         "NUXT_PUBLIC_SITE_URL": "https://wanfind.com",
+        "NUXT_PUBLIC_CN_ASSET_CDN": "https://wan.zzf.net.cn",
         "NUXT_GITHUB_REPORTS_OWNER": "zhenfeng95",
         "NUXT_GITHUB_REPORTS_REPO": "site-nav",
         "NUXT_GITHUB_REPORTS_REF": "main",

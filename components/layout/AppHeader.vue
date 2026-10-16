@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { SITE_NAME } from '~/utils/site'
+
+const logoSrc = assetUrl('/logo.png')
 </script>
 
 <template>
@@ -10,7 +12,7 @@ import { SITE_NAME } from '~/utils/site'
       <div class="flex h-16 items-center justify-between gap-4">
         <NuxtLink to="/" class="flex min-w-0 items-center gap-2 text-zinc-900 dark:text-zinc-50">
           <img
-            src="/logo.png"
+            :src="logoSrc"
             alt=""
             width="28"
             class="h-7 w-7 shrink-0 rounded-sm object-cover"

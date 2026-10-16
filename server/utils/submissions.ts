@@ -261,8 +261,7 @@ export function extractTitleAndIcon(html: string, pageUrl: string): { title: str
 
   if (!iconUrl) {
     try {
-      const host = new URL(pageUrl).hostname
-      iconUrl = `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&sz=64`
+      iconUrl = new URL('/favicon.ico', pageUrl).toString()
     }
     catch {
       iconUrl = ''

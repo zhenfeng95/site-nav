@@ -3,6 +3,7 @@ import { footerAboutLinks, SITE_DISCLAIMER, SITE_NAME, SITE_NAME_EN, SITE_TAGLIN
 import { getFooterCategoryLinks } from '~/utils/navigation';
 
 const footerCategoryLinks = getFooterCategoryLinks();
+const logoSrc = assetUrl('/logo.png');
 </script>
 
 <template>
@@ -11,7 +12,7 @@ const footerCategoryLinks = getFooterCategoryLinks();
             <div class="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
                 <div class="sm:col-span-2 lg:col-span-2">
                     <NuxtLink to="/" class="inline-flex items-center gap-2 text-zinc-900 dark:text-zinc-50">
-                        <img src="/logo.png" alt="" width="28" class="h-7 w-7 shrink-0 rounded-sm object-cover" />
+                        <img :src="logoSrc" alt="" width="28" class="h-7 w-7 shrink-0 rounded-sm object-cover" />
                         <span class="text-sm font-semibold tracking-tight">{{ SITE_NAME }}</span>
                     </NuxtLink>
                     <p class="mt-4 max-w-sm text-sm leading-6 text-zinc-500 dark:text-zinc-400">

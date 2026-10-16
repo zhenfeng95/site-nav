@@ -1,6 +1,6 @@
 /**
  * 51.la 网站统计（仅客户端、仅生产、仅中国大陆）。
- * 是否加载由 plugins/la51-country.server.ts 根据 CF-IPCountry 写入的状态决定：
+ * 是否加载由 plugins/geo-cn.server.ts 根据 CF-IPCountry 写入的状态决定：
  * 仅 CN 为 true；缺失或不为 CN 则不加载。
  */
 const LA51_ID = '3RUh06V8ON7gX3j8'

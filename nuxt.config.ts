@@ -53,12 +53,6 @@ export default defineNuxtConfig({
             link: [
                 { rel: 'icon', type: 'image/png', href: '/favicon.png' },
                 { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
-                { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-                { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
-                {
-                    rel: 'stylesheet',
-                    href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap',
-                },
             ],
             meta: [{ name: 'theme-color', content: '#0ea5e9' }],
         },
@@ -71,6 +65,8 @@ export default defineNuxtConfig({
         public: {
             siteUrl: 'http://localhost:3000',
             siteName: '万寻导航',
+            /** Domestic static mirror for CF-IPCountry=CN (e.g. https://wan.zzf.net.cn). */
+            cnAssetCdn: '',
         },
     },
 
@@ -83,6 +79,7 @@ export default defineNuxtConfig({
                 name: 'site-nav',
                 vars: {
                     NUXT_PUBLIC_SITE_URL: 'https://wanfind.com',
+                    NUXT_PUBLIC_CN_ASSET_CDN: 'https://wan.zzf.net.cn',
                 },
             },
         },

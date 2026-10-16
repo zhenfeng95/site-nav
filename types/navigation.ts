@@ -14,7 +14,7 @@ export interface NavigationItem {
   name: string
   description: string
   url: string
-  /** Optional explicit icon when favicon services miss the site. */
+  /** Optional bundled icon path (e.g. /icons/sites/…). */
   iconUrl?: string
   tags: string[]
   officialUrlConfirmed: boolean
